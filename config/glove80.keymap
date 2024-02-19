@@ -407,14 +407,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SL_TOGGLE_SYMBOLS";
             #binding-cells = <0>;
-            bindings = <&sl_tap_hold 3 3>, <&tog 3>;
+            bindings = <&sl_tap_hold 3 3>, <&to 3>;
         };
 
         sl_toggle_numpad: sl_toggle_numpad {
             compatible = "zmk,behavior-tap-dance";
             label = "SL_TOGGLE_NUMPAD";
             #binding-cells = <0>;
-            bindings = <&sl_tap_hold 1 1>, <&tog 1>;
+            bindings = <&sl_tap_hold 1 1>, <&to 1>;
         };
     };
 
@@ -487,7 +487,7 @@
 &trans      &none      &none           &none           &kp INS          &none                                                  &kp LEFT_PARENTHESIS   &kp KP_NUM  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &kp F11
 &trans      &none      &none           &kp UP_ARROW    &none            &none                                                  &kp RIGHT_PARENTHESIS  &kp KP_N7   &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &kp F12
 &trans      &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none                                                  &kp PERCENT            &kp KP_N4   &kp KP_N5     &kp KP_N6     &kp KP_PLUS      &none
-&trans      &kp K_APP  &none           &kp LC(LS(C))   &kp LC(LS(V))    &none  &trans  &trans  &to 0   &trans  &trans  &trans  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &trans
+&trans      &kp K_APP  &none           &kp LC(LS(C))   &kp LC(LS(V))    &none  &to 0   &trans  &trans  &trans  &trans  &trans  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &trans
 &magic 6 0  &kp CAPS   &none           &none           &none                   &trans  &trans  &trans  &trans  &trans  &trans                         &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &trans
             >;
         };
@@ -509,7 +509,7 @@
 &trans  &trans      &trans      &trans        &trans        &trans                                                         &trans      &trans    &trans  &trans      &trans  &kp F11
 &trans  &kp LS(N3)  &kp LS(N1)  &kp LS(LBKT)  &kp LS(RBKT)  &kp LS(EQUAL)                                                  &kp LS(N6)  &trans    &trans  &kp LS(N4)  &trans  &kp F12
 &trans  &kp LS(N2)  &kp LS(N5)  &kp LBKT      &kp RBKT      &kp EQUAL                                                      &kp LEFT    &kp DOWN  &kp UP  &kp RIGHT   &trans  &trans
-&trans  &kp LS(N8)  &kp LS(N7)  &kp LS(N9)    &kp LS(N0)    &kp LS(N4)     &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans  &trans      &trans  &trans
+&trans  &kp LS(N8)  &kp LS(N7)  &kp LS(N9)    &kp LS(N0)    &kp LS(N4)     &trans  &trans  &trans  &trans  &trans  &to 0   &trans      &trans    &trans  &trans      &trans  &trans
 &trans  &trans      &trans      &trans        &trans                       &trans  &trans  &trans  &trans  &trans  &trans              &trans    &trans  &trans      &trans  &trans
             >;
         };
