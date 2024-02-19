@@ -50,7 +50,7 @@
 &sk {
   release-after-ms = <1000>;
   quick-release;
-}
+};
 
 
 /* Glove80 system behavior & macros */
