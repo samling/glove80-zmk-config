@@ -373,7 +373,7 @@
         auto_tab: auto_tab {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <400>;
+            tapping_term_ms = <350>;
             quick_tap_ms = <0>;
             global-quick-tap;
             flavor = "tap-preferred";
@@ -532,12 +532,12 @@
 
         layer_Symbols {
             bindings = <
-&kp F1         &kp F2      &kp F3      &kp F4        &kp F5                                                                                   &kp F6    &kp F7  &kp F8      &kp F9  &kp F10
-&triple_grave  &trans      &trans      &trans        &trans        &trans                                                         &trans      &trans    &trans  &trans      &trans  &kp F11
-&trans         &kp LS(N3)  &kp LS(N1)  &kp LS(LBKT)  &kp LS(RBKT)  &kp LS(EQUAL)                                                  &kp LS(N6)  &trans    &trans  &kp LS(N4)  &trans  &kp F12
-&trans         &kp LS(N2)  &kp LS(N5)  &kp LBKT      &kp RBKT      &kp EQUAL                                                      &kp LEFT    &kp DOWN  &kp UP  &kp RIGHT   &trans  &trans
-&trans         &kp LS(N8)  &kp LS(N7)  &kp LS(N9)    &kp LS(N0)    &kp LS(N4)     &trans  &trans  &trans  &trans  &trans  &to 0   &trans      &trans    &trans  &trans      &trans  &trans
-&trans         &trans      &trans      &trans        &trans                       &trans  &trans  &trans  &trans  &trans  &trans              &trans    &trans  &trans      &trans  &trans
+&kp F1         &kp F2      &kp F3      &kp F4        &kp F5                                                                                   &kp F6           &kp F7       &kp F8      &kp F9  &kp F10
+&triple_grave  &trans      &trans      &trans        &trans        &trans                                                         &trans      &trans           &trans       &trans      &trans  &kp F11
+&trans         &kp LS(N3)  &kp LS(N1)  &kp LS(LBKT)  &kp LS(RBKT)  &kp LS(EQUAL)                                                  &kp LS(N6)  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LS(N4)  &trans  &kp F12
+&trans         &kp LS(N2)  &kp LS(N5)  &kp LBKT      &kp RBKT      &kp EQUAL                                                      &kp LEFT    &kp DOWN         &kp UP       &kp RIGHT   &trans  &trans
+&trans         &kp LS(N8)  &kp LS(N7)  &kp LS(N9)    &kp LS(N0)    &kp LS(N4)     &trans  &trans  &trans  &trans  &trans  &to 0   &trans      &trans           &trans       &trans      &trans  &trans
+&trans         &trans      &trans      &trans        &trans                       &trans  &trans  &trans  &trans  &trans  &trans              &trans           &trans       &trans      &trans  &trans
             >;
         };
 
