@@ -385,6 +385,7 @@
             bindings = <&mo>, <&sl_toggle_symbols>;
 
             label = "SL_TAP_HOLD_SYMBOLS";
+            quick-tap-ms = <200>;
         };
 
         sk_tap_hold: sk_tap_hold {
@@ -443,6 +444,7 @@
             bindings = <&mo>, <&sl_toggle_numpad>;
 
             label = "SL_TAP_HOLD_NUMPAD";
+            quick-tap-ms = <200>;
         };
     };
 
