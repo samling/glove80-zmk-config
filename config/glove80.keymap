@@ -377,20 +377,20 @@
 
         #define MO_SL(layer) &mo_sl layer
 
-        sl_tap_hold: sl_tap_hold {
+        sl_tap_hold_symbols: sl_tap_hold_symbols {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            bindings = <&mo>, <&sl>;
+            bindings = <&mo>, <&sl_toggle_symbols>;
 
-            label = "sl_tap_hold";
+            label = "SL_TAP_HOLD_SYMBOLS";
         };
 
         sk_tap_hold: sk_tap_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "SK_TAP_HOLD";
-            bindings = <&kp>, <&sk>;
+            bindings = <&kp>, <&sk_shift>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -400,21 +400,49 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SK_SHIFT";
             #binding-cells = <0>;
-            bindings = <&sk_tap_hold LEFT_SHIFT LEFT_SHIFT>, <&caps_word>;
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
         };
 
         sl_toggle_symbols: sl_toggle_symbols {
             compatible = "zmk,behavior-tap-dance";
             label = "SL_TOGGLE_SYMBOLS";
             #binding-cells = <0>;
-            bindings = <&sl_tap_hold 3 3>, <&to 3>;
+            bindings = <&sl 3>, <&to 3>;
         };
 
         sl_toggle_numpad: sl_toggle_numpad {
             compatible = "zmk,behavior-tap-dance";
             label = "SL_TOGGLE_NUMPAD";
             #binding-cells = <0>;
-            bindings = <&sl_tap_hold 1 1>, <&to 1>;
+            bindings = <&sl 1>, <&to 1>;
+        };
+
+        layer_mo_tog: layer_mo_tog {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_MO_TOG";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        capsword_tap_toggle: capsword_tap_toggle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CAPSWORD_TAP_TOGGLE";
+            bindings = <&kp>, <&caps_word>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        sl_tap_hold_numpad: sl_tap_hold_numpad {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&sl_toggle_numpad>;
+
+            label = "SL_TAP_HOLD_NUMPAD";
         };
     };
 
@@ -472,12 +500,12 @@
 
         layer_Base {
             bindings = <
-&none                      &none   &kp CAPS  &none     &kp PSCRN                                                                                                                           &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp EQUAL  &kp DEL
-&kp GRAVE                  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                                                                                           &kp N6  &kp N7      &kp N8        &kp N9        &kp N0     &kp BSLH
-&auto_tab LA(LC(TAB)) TAB  &kp Q   &kp W     &kp E     &kp R      &kp T                                                                                                            &kp Y   &kp U       &kp I         &kp O         &kp P      &kp MINUS
-&mt LCTRL ESC              &kp A   &kp S     &kp D     &kp F      &kp G                                                                                                            &kp H   &kp J       &kp K         &kp L         &kp SEMI   &kp SQT
-&mt LSHFT LPAR             &kp Z   &kp X     &kp C     &kp V      &kp B   &sl_toggle_numpad  &kp LA(LC(LGUI))  &kp LC(W)     &kp LC(LS(T))  &kp LA(LS(LCTRL))  &sl_toggle_symbols  &kp N   &kp M       &kp COMMA     &kp DOT       &kp FSLH   &mt RSHFT RPAR
-&magic 6 0                 &tog 4  &none     &kp LGUI  &kp LALT           &kp RET            &sk_shift         &tmux_scroll  &kp LC(A)      &kp BSPC           &kp SPACE                   &kp HOME    &kp PG_DN     &kp PG_UP     &kp END    &mo 2
+&none                      &none   &kp CAPS  &none     &kp PSCRN                                                                                                                                                &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp EQUAL  &kp DEL
+&kp GRAVE                  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                                                                                                                &kp N6  &kp N7      &kp N8        &kp N9        &kp N0     &kp BSLH
+&auto_tab LA(LC(TAB)) TAB  &kp Q   &kp W     &kp E     &kp R      &kp T                                                                                                                                 &kp Y   &kp U       &kp I         &kp O         &kp P      &kp MINUS
+&mt LCTRL ESC              &kp A   &kp S     &kp D     &kp F      &kp G                                                                                                                                 &kp H   &kp J       &kp K         &kp L         &kp SEMI   &kp SQT
+&mt LSHFT LPAR             &kp Z   &kp X     &kp C     &kp V      &kp B   &sl_tap_hold_numpad 1 0  &kp LA(LC(LGUI))           &kp LC(W)     &kp LC(LS(T))  &kp LA(LS(LCTRL))  &sl_tap_hold_symbols 3 3  &kp N   &kp M       &kp COMMA     &kp DOT       &kp FSLH   &mt RSHFT RPAR
+&magic 6 0                 &tog 4  &none     &kp LGUI  &kp LALT           &kp RET                  &sk_tap_hold LEFT_SHIFT 0  &tmux_scroll  &kp LC(A)      &kp BSPC           &kp SPACE                         &kp HOME    &kp PG_DN     &kp PG_UP     &kp END    &mo 2
             >;
         };
 
