@@ -340,13 +340,13 @@
 
         // Writes a helm-style comment and places cursor in the center: {{- /* | */ -}}
 
-        helm_comment: helm_comment {
+        helm_comment_multi_line: helm_comment {
             label = "helm_comment";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LS(LBKT) &kp LS(LBKT) &kp MINUS &kp SPACE &kp SLASH &kp STAR &kp SPACE &kp SPACE &kp STAR &kp SLASH &kp SPACE &kp MINUS &kp LS(RBKT) &kp LS(RBKT) &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
+                <&kp LS(LBKT) &kp LS(LBKT) &kp SLASH &kp STAR &kp STAR &kp SLASH &kp LS(RBKT) &kp LS(RBKT) &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp ENTER &kp ENTER &kp UP_ARROW>;
         };
 
         triple_grave: triple_grave {
@@ -361,6 +361,24 @@
             #binding-cells = <0>;
             bindings = <&kp FSLH &kp FSLH &kp SPACE>;
             label = "SLASH_COMMENT";
+        };
+
+        helm_comment_single_line: helm_comment_single_line {
+            compatible = "zmk,behavior-macro";
+            label = "HELM_COMMENT_SINGLE_LINE";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LS(LBKT) &kp LS(LBKT) &kp MINUS &kp SPACE &kp SLASH &kp STAR &kp SPACE &kp SPACE &kp STAR &kp SLASH &kp SPACE &kp MINUS &kp LS(RBKT) &kp LS(RBKT) &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
+        };
+
+        helm_func: helm_func {
+            compatible = "zmk,behavior-macro";
+            label = "HELM_FUNC";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LS(LBKT) &kp LS(LBKT) &kp MINUS &kp SPACE &kp SPACE &kp MINUS &kp LS(RBKT) &kp LS(RBKT) &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
         };
     };
 
@@ -500,10 +518,24 @@
             layers = <2>;
         };
 
-        combo_helm_comment {
+        combo_helm_comment_multi_line {
             timeout-ms = <50>;
-            key-positions = <40 25 43>; // "HEL"
-            bindings = <&helm_comment>;
+            key-positions = <40 43 49>; // "HEL"
+            bindings = <&helm_comment_multi_line>;
+            layers = <2>;
+        };
+
+        combo_helm_comment_single_line {
+            bindings = <&helm_comment_single_line>;
+            key-positions = <40 43 36>;
+            timeout-ms = <50>;
+            layers = <2>;
+        };
+
+        combo_helm_func {
+            bindings = <&helm_func>;
+            key-positions = <40 43 38>;
+            timeout-ms = <50>;
             layers = <2>;
         };
     };
