@@ -346,7 +346,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LS(LBKT) &kp LS(LBKT) &kp MINUS &kp SPACE &kp SLASH &kp STAR &kp SPACE &kp SPACE &kp SPACE &kp STAR &kp SLASH &kp SPACE &kp MINUS &kp LS(RBKT) &kp LS(RBKT) &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
+                <&kp LS(LBKT) &kp LS(LBKT) &kp MINUS &kp SPACE &kp SLASH &kp STAR &kp SPACE &kp SPACE &kp STAR &kp SLASH &kp SPACE &kp MINUS &kp LS(RBKT) &kp LS(RBKT) &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
         };
 
         triple_grave: triple_grave {
