@@ -474,7 +474,7 @@
 
         combo_braces_pair {
             timeout-ms = <50>;
-            key-positions = <25 26>; // "{}"
+            key-positions = <49 50>; // "{}"
             bindings = <&braces_pair>;
             layers = <2>;
         };
@@ -488,7 +488,7 @@
 
         combo_parens_pair {
             timeout-ms = <50>;
-            key-positions = <49 50>; // "()"
+            key-positions = <25 26>; // "()"
             bindings = <&parens_pair>;
             layers = <2>;
         };
