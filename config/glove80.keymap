@@ -401,6 +401,13 @@
             bindings = <&kp DLLR &kp UNDER &kp SPACE>;
             label = "GO_EMPTY_SET";
         };
+
+        go_not_equal: go_not_equal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL &kp EQUAL &kp SPACE>;
+            label = "GO_NOT_EQUAL";
+        };
     };
 
     behaviors {
@@ -612,6 +619,12 @@
             timeout-ms = <50>;
             layers = <2>;
         };
+
+        combo_go_not_equal {
+            bindings = <&go_not_equal>;
+            key-positions = <39 35>;
+            layers = <2>;
+        };
     };
 };
 
@@ -645,12 +658,12 @@
 
         layer_Symbols {
             bindings = <
-&trans         &trans  &trans         &trans                &trans                                                                                      &trans           &trans       &trans      &trans  &trans
-&triple_grave  &trans  &kp HASH       &kp LESS_THAN         &kp GREATER_THAN       &kp EXCL                                                   &trans    &trans           &trans       &trans      &trans  &trans
-&trans         &trans  &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER                                                  &kp N0    &trans           &kp CARET    &kp DOLLAR  &trans  &trans
-&trans         &trans  &kp COLON      &kp LBKT              &kp RBKT               &kp EQUAL                                                  &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT   &trans  &trans
-&trans         &trans  &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE   &trans  &trans  &trans  &trans  &trans  &to 0   &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &trans      &trans  &trans
-&trans         &trans  &kp SLASH      &kp PERCENT           &kp STAR                          &trans  &trans  &trans  &trans  &trans  &trans            &trans           &trans       &trans      &trans  &trans
+&trans         &trans    &trans         &trans                &trans                                                                                      &trans           &trans       &trans      &trans  &trans
+&triple_grave  &trans    &kp HASH       &kp LESS_THAN         &kp GREATER_THAN       &kp EXCL                                                   &trans    &trans           &trans       &trans      &trans  &trans
+&trans         &trans    &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER                                                  &kp N0    &trans           &kp CARET    &kp DOLLAR  &trans  &trans
+&trans         &kp EXCL  &kp COLON      &kp LBKT              &kp RBKT               &kp EQUAL                                                  &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT   &trans  &trans
+&trans         &trans    &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE   &trans  &trans  &trans  &trans  &trans  &to 0   &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &trans      &trans  &trans
+&trans         &trans    &kp SLASH      &kp PERCENT           &kp STAR                          &trans  &trans  &trans  &trans  &trans  &trans            &trans           &trans       &trans      &trans  &trans
             >;
         };
 
