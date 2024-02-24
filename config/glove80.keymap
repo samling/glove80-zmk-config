@@ -604,7 +604,7 @@
 
         combo_go_declare {
             bindings = <&go_declare>;
-            key-positions = <36 39>;
+            key-positions = <36 52>;
             layers = <2>;
         };
 
@@ -615,14 +615,14 @@
 
         combo_lt_gt_pair_2 {
             bindings = <&lt_gt_pair>;
-            key-positions = <13 14>;
+            key-positions = <67 68>;
             timeout-ms = <50>;
             layers = <2>;
         };
 
         combo_go_not_equal {
             bindings = <&go_not_equal>;
-            key-positions = <39 35>;
+            key-positions = <52 39>;
             layers = <2>;
         };
     };
@@ -658,23 +658,23 @@
 
         layer_Symbols {
             bindings = <
-&trans         &trans    &trans         &trans                &trans                                                                                      &trans           &trans       &trans      &trans  &trans
-&triple_grave  &trans    &kp HASH       &kp LESS_THAN         &kp GREATER_THAN       &kp EXCL                                                   &trans    &trans           &trans       &trans      &trans  &trans
-&trans         &trans    &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER                                                  &kp N0    &trans           &kp CARET    &kp DOLLAR  &trans  &trans
-&trans         &kp EXCL  &kp COLON      &kp LBKT              &kp RBKT               &kp EQUAL                                                  &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT   &trans  &trans
-&trans         &trans    &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE   &trans  &trans  &trans  &trans  &trans  &to 0   &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &trans      &trans  &trans
-&trans         &trans    &kp SLASH      &kp PERCENT           &kp STAR                          &trans  &trans  &trans  &trans  &trans  &trans            &trans           &trans       &trans      &trans  &trans
+&trans         &trans    &trans         &trans                &trans                                                                                             &trans    &trans     &trans      &trans  &trans
+&triple_grave  &trans    &trans         &trans                &trans                 &trans                                                            &trans    &trans    &trans     &trans      &trans  &trans
+&trans         &trans    &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER                                                         &trans    &kp N0    &kp CARET  &kp DOLLAR  &trans  &trans
+&trans         &kp HASH  &kp COLON      &kp LBKT              &kp RBKT               &kp EXCL                                                          &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT   &trans  &trans
+&trans         &trans    &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE   &kp EQUAL    &trans    &trans  &trans  &trans  &to 0   &trans    &trans    &trans     &trans      &trans  &trans
+&trans         &trans    &trans         &kp LESS_THAN         &kp GREATER_THAN                  &kp PERCENT  &kp STAR  &trans  &trans  &trans  &trans            &trans    &trans     &trans      &trans  &trans
             >;
         };
 
         layer_Windows {
             bindings = <
-&trans  &kp LA(LC(LG(N1)))  &kp LA(LC(LG(N2)))  &kp LA(LC(LG(N3)))  &kp LA(LC(LG(N4)))                                                                                          &trans              &trans              &trans              &trans              &trans
-&trans  &kp LS(LA(LC(N1)))  &kp LS(LA(LC(N2)))  &kp LS(LA(LC(N3)))  &kp LS(LA(LC(N4)))  &kp LS(LA(LC(N5)))                                                  &kp LS(LA(LC(N6)))  &kp LS(LA(LC(N7)))  &kp LS(LA(LC(N8)))  &kp LS(LA(LC(N9)))  &kp LS(LA(LC(N0)))  &trans
-&trans  &trans              &trans              &trans              &trans              &trans                                                              &trans              &trans              &trans              &trans              &trans              &trans
-&trans  &trans              &trans              &trans              &trans              &trans                                                              &kp LS(LA(LC(H)))   &kp LS(LA(LC(J)))   &kp LS(LA(LC(K)))   &kp LS(LA(LC(L)))   &trans              &trans
-&trans  &trans              &trans              &trans              &trans              &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans              &trans              &trans              &trans              &trans
-&trans  &trans              &trans              &trans              &trans                                  &trans  &trans  &trans  &trans  &trans  &trans                      &trans              &trans              &trans              &trans              &trans
+&trans  &kp LA(LC(LG(N1)))  &kp LA(LC(LG(N2)))  &kp LA(LC(LG(N3)))  &kp LA(LC(LG(N4)))                                                                                           &trans              &trans              &trans              &trans              &trans
+&trans  &kp LS(LA(LC(N1)))  &kp LS(LA(LC(N2)))  &kp LS(LA(LC(N3)))  &kp LS(LA(LC(N4)))   &kp LS(LA(LC(N5)))                                                  &kp LS(LA(LC(N6)))  &kp LS(LA(LC(N7)))  &kp LS(LA(LC(N8)))  &kp LS(LA(LC(N9)))  &kp LS(LA(LC(N0)))  &trans
+&trans  &trans              &trans              &trans              &trans               &trans                                                              &trans              &trans              &trans              &trans              &trans              &trans
+&trans  &trans              &kp LC(LS(TAB))     &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LC(TAB)                                                         &kp LS(LA(LC(H)))   &kp LS(LA(LC(J)))   &kp LS(LA(LC(K)))   &kp LS(LA(LC(L)))   &trans              &trans
+&trans  &trans              &trans              &trans              &trans               &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans              &trans              &trans              &trans              &trans
+&trans  &trans              &trans              &trans              &trans                                   &trans  &trans  &trans  &trans  &trans  &trans                      &trans              &trans              &trans              &trans              &trans
             >;
         };
 
