@@ -528,7 +528,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TMUX_LEADER_SCROLL";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <350>;
             bindings = <&kp LC(A)>, <&tmux_scroll>;
         };
 
