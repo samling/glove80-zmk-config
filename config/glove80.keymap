@@ -562,22 +562,15 @@
 
         combo_brackets_pair {
             timeout-ms = <50>;
-            key-positions = <37 38>; // "[]"
+            key-positions = <25 26>; // "[]"
             bindings = <&brackets_pair>;
             layers = <2>;
         };
 
         combo_parens_pair {
             timeout-ms = <50>;
-            key-positions = <25 26>; // "()"
+            key-positions = <37 38>; // "()"
             bindings = <&parens_pair>;
-            layers = <2>;
-        };
-
-        combo_lt_gt_pair {
-            timeout-ms = <50>;
-            key-positions = <60 61>; // "<>"
-            bindings = <&lt_gt_pair>;
             layers = <2>;
         };
 
@@ -660,8 +653,8 @@
             bindings = <
 &trans         &trans    &trans         &trans                &trans                                                                                             &trans    &trans     &trans      &trans  &trans
 &triple_grave  &trans    &trans         &trans                &trans                 &trans                                                            &trans    &trans    &trans     &trans      &trans  &trans
-&trans         &trans    &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER                                                         &trans    &kp N0    &kp CARET  &kp DOLLAR  &trans  &trans
-&trans         &kp HASH  &kp EXCL       &kp LBKT              &kp RBKT               &kp COLON                                                         &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT   &trans  &trans
+&trans         &trans    &kp DOLLAR     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDER                                                         &trans    &kp N0    &kp CARET  &kp DOLLAR  &trans  &trans
+&trans         &kp HASH  &kp EXCL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON                                                         &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT   &trans  &trans
 &trans         &trans    &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE   &kp EQUAL    &trans    &trans  &trans  &trans  &to 0   &trans    &trans    &trans     &trans      &trans  &trans
 &trans         &trans    &trans         &kp LESS_THAN         &kp GREATER_THAN                  &kp PERCENT  &kp STAR  &trans  &trans  &trans  &trans            &trans    &trans     &trans      &trans  &trans
             >;
