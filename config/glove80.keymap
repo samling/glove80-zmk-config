@@ -569,6 +569,7 @@
             timeout-ms = <50>;
             key-positions = <61 62>; // "./"
             bindings = <&up_directory>;
+            require-prior-idle-ms = <50>;
         };
 
         combo_braces_pair {
@@ -576,6 +577,7 @@
             key-positions = <25 26>; // "{}"
             bindings = <&braces_pair>;
             layers = <2>;
+            require-prior-idle-ms = <50>;
         };
 
         combo_brackets_pair {
@@ -583,6 +585,7 @@
             key-positions = <49 50>; // "[]"
             bindings = <&brackets_pair>;
             layers = <2>;
+            require-prior-idle-ms = <50>;
         };
 
         combo_parens_pair {
@@ -590,6 +593,7 @@
             key-positions = <37 38>; // "()"
             bindings = <&parens_pair>;
             layers = <2>;
+            require-prior-idle-ms = <50>;
         };
 
         combo_helm_comment_multi_line {
@@ -624,11 +628,12 @@
             key-positions = <24 27>;
         };
 
-        combo_lt_gt_pair_2 {
+        combo_lt_gt_pair {
             bindings = <&lt_gt_pair>;
             key-positions = <67 68>;
             timeout-ms = <50>;
             layers = <2>;
+            require-prior-idle-ms = <50>;
         };
 
         combo_go_not_equal {
