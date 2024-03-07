@@ -674,12 +674,12 @@
 
         layer_Symbols {
             bindings = <
-&trans         &trans    &trans         &trans                &trans                                                                                             &trans    &trans     &trans      &trans  &trans
-&triple_grave  &trans    &trans         &trans                &trans                 &trans                                                            &trans    &trans    &trans     &trans      &trans  &trans
-&trans         &trans    &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER                                                         &trans    &kp N0    &kp CARET  &kp DOLLAR  &trans  &trans
-&trans         &kp HASH  &kp EXCL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON                                                         &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT   &trans  &trans
-&trans         &trans    &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE   &kp EQUAL    &trans    &trans  &trans  &trans  &to 0   &trans    &trans    &trans     &trans      &trans  &trans
-&trans         &trans    &trans         &kp LESS_THAN         &kp GREATER_THAN                  &kp PERCENT  &kp STAR  &trans  &trans  &trans  &trans            &trans    &trans     &trans      &trans  &trans
+&trans         &trans    &trans         &trans                &trans                                                                                                   &trans    &trans     &trans      &trans  &trans
+&triple_grave  &trans    &trans         &trans                &trans                 &trans                                                                  &trans    &trans    &trans     &trans      &trans  &trans
+&trans         &trans    &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER                                                               &trans    &kp N0    &kp CARET  &kp DOLLAR  &trans  &trans
+&trans         &kp HASH  &kp EXCL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON                                                               &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT   &trans  &trans
+&trans         &trans    &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE   &kp EQUAL    &trans    &trans        &trans  &trans  &to 0   &trans    &trans    &trans     &trans      &trans  &trans
+&trans         &trans    &trans         &kp LESS_THAN         &kp GREATER_THAN                  &kp PERCENT  &kp STAR  &kp LEFT_GUI  &trans  &trans  &trans            &trans    &trans     &trans      &trans  &trans
             >;
         };
 
