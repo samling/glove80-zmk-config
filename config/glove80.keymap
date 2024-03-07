@@ -685,12 +685,12 @@
 
         layer_Windows {
             bindings = <
-&trans              &kp LA(LC(LG(N1)))  &kp LA(LC(LG(N2)))  &kp LA(LC(LG(N3)))  &kp LA(LC(LG(N4)))                                                                                           &trans              &trans              &trans              &trans              &trans
-&trans              &kp LS(LA(LC(N1)))  &kp LS(LA(LC(N2)))  &kp LS(LA(LC(N3)))  &kp LS(LA(LC(N4)))   &kp LS(LA(LC(N5)))                                                  &kp LS(LA(LC(N6)))  &kp LS(LA(LC(N7)))  &kp LS(LA(LC(N8)))  &kp LS(LA(LC(N9)))  &kp LS(LA(LC(N0)))  &trans
-&trans              &trans              &trans              &trans              &kp LS(LA(LC(R)))    &trans                                                              &trans              &trans              &trans              &trans              &trans              &trans
-&kp LC(LS(ESCAPE))  &trans              &kp LC(LS(TAB))     &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LC(TAB)                                                         &kp LS(LA(LC(H)))   &kp LS(LA(LC(J)))   &kp LS(LA(LC(K)))   &kp LS(LA(LC(L)))   &trans              &trans
-&trans              &trans              &trans              &trans              &trans               &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans              &trans              &trans              &trans              &trans
-&trans              &trans              &trans              &trans              &trans                                   &trans  &trans  &trans  &trans  &trans  &trans                      &trans              &trans              &trans              &trans              &trans
+&trans              &trans              &trans                    &trans              &trans                                                                                                                  &trans              &trans              &trans              &trans                     &trans
+&trans              &kp LS(LA(LC(N1)))  &kp LS(LA(LC(N2)))        &kp LS(LA(LC(N3)))  &kp LS(LA(LC(N4)))        &kp LS(LA(LC(N5)))                                                        &kp LS(LA(LC(N6)))  &kp LS(LA(LC(N7)))  &kp LS(LA(LC(N8)))  &kp LS(LA(LC(N9)))  &kp LS(LA(LC(N0)))         &trans
+&trans              &trans              &kp LA(LC(LG(NUMBER_1)))  &kp LA(LC(LG(N2)))  &kp LA(LC(LG(NUMBER_3)))  &kp LA(LC(LG(NUMBER_4)))                                                  &kp LC(LS(TAB))     &kp LA(LEFT)        &kp LA(RIGHT)       &kp LC(TAB)         &kp LS(LA(LC(P)))          &kp LS(LA(LC(MINUS)))
+&kp LC(LS(ESCAPE))  &trans              &trans                    &trans              &kp LS(LA(LC(F)))         &trans                                                                    &kp LS(LA(LC(H)))   &kp LS(LA(LC(J)))   &kp LS(LA(LC(K)))   &kp LS(LA(LC(L)))   &kp LS(LA(LC(SEMICOLON)))  &kp LS(LA(LC(SQT)))
+&trans              &trans              &trans                    &kp LC(LA(LG(C)))   &trans                    &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LA(LC(M)))   &kp LS(LA(LC(N)))   &trans              &trans              &trans                     &trans
+&trans              &trans              &trans                    &trans              &trans                                              &trans  &trans  &trans  &trans  &trans  &trans                      &trans              &trans              &trans              &trans                     &trans
             >;
         };
 
