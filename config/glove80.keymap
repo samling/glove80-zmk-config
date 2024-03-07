@@ -574,7 +574,7 @@
 
         combo_braces_pair {
             timeout-ms = <50>;
-            key-positions = <25 26>; // "{}"
+            key-positions = <49 50>; // "{}"
             bindings = <&braces_pair>;
             layers = <2>;
             require-prior-idle-ms = <50>;
@@ -582,7 +582,7 @@
 
         combo_brackets_pair {
             timeout-ms = <50>;
-            key-positions = <49 50>; // "[]"
+            key-positions = <37 38>; // "[]"
             bindings = <&brackets_pair>;
             layers = <2>;
             require-prior-idle-ms = <50>;
@@ -590,7 +590,7 @@
 
         combo_parens_pair {
             timeout-ms = <50>;
-            key-positions = <37 38>; // "()"
+            key-positions = <25 26>; // "()"
             bindings = <&parens_pair>;
             layers = <2>;
             require-prior-idle-ms = <50>;
@@ -676,9 +676,9 @@
             bindings = <
 &trans         &trans    &trans         &trans                &trans                                                                                             &trans    &trans     &trans      &trans  &trans
 &triple_grave  &trans    &trans         &trans                &trans                 &trans                                                            &trans    &trans    &trans     &trans      &trans  &trans
-&trans         &trans    &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDER                                                         &trans    &kp N0    &kp CARET  &kp DOLLAR  &trans  &trans
-&trans         &kp HASH  &kp EXCL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON                                                         &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT   &trans  &trans
-&trans         &trans    &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE   &kp EQUAL    &trans    &trans  &trans  &trans  &to 0   &trans    &trans    &trans     &trans      &trans  &trans
+&trans         &trans    &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER                                                         &trans    &kp N0    &kp CARET  &kp DOLLAR  &trans  &trans
+&trans         &kp HASH  &kp EXCL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON                                                         &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT   &trans  &trans
+&trans         &trans    &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE   &kp EQUAL    &trans    &trans  &trans  &trans  &to 0   &trans    &trans    &trans     &trans      &trans  &trans
 &trans         &trans    &trans         &kp LESS_THAN         &kp GREATER_THAN                  &kp PERCENT  &kp STAR  &trans  &trans  &trans  &trans            &trans    &trans     &trans      &trans  &trans
             >;
         };
