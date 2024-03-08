@@ -574,7 +574,7 @@
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE>, <&single_quote_pair>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
     };
 
