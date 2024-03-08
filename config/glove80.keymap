@@ -415,6 +415,13 @@
             bindings = <&kp SQT &kp SQT &kp LEFT>;
             label = "SINGLE_QUOTE_PAIR";
         };
+
+        double_quote_pair: double_quote_pair {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT>;
+            label = "DOUBLE_QUOTE_PAIR";
+        };
     };
 
     behaviors {
@@ -567,6 +574,13 @@
             #binding-cells = <0>;
             bindings = <&none>, <&to 4>;
         };
+
+        tapdance_quote_combos: tapdance_quote_combos {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_QUOTE_COMBOS";
+            #binding-cells = <0>;
+            bindings = <&single_quote_pair>, <&double_quote_pair>;
+        };
     };
 
     combos {
@@ -646,6 +660,14 @@
         combo_go_not_equal {
             bindings = <&go_not_equal>;
             key-positions = <52 12>;
+            layers = <2>;
+        };
+
+        combo_quote_pair {
+            bindings = <&tapdance_quote_combos>;
+            key-positions = <45 44>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
             layers = <2>;
         };
     };
