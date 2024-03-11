@@ -622,7 +622,7 @@
 
         combo_braces_pair {
             timeout-ms = <50>;
-            key-positions = <24 27>; // "{}"
+            key-positions = <49 50>; // "{}"
             bindings = <&braces_pair>;
             layers = <2>;
             require-prior-idle-ms = <50>;
