@@ -747,12 +747,12 @@
 
         layer_Symbols {
             bindings = <
-&kp F1         &kp F2         &kp F3      &kp F4                &kp F5                                                                                                 &kp F6    &kp F7  &kp F8      &kp F9  &kp F10
-&triple_grave  &trans         &kp HASH    &kp EXCL              &kp SLASH              &kp BACKSLASH                                                        &trans     &trans    &trans  &trans      &trans  &kp F11
-&trans         &trans         &kp PLUS    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp STAR                                                             &kp CARET  &trans    &trans  &kp DOLLAR  &trans  &kp F12
-&trans         &kp EXCL       &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL                                                            &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT   &trans  &trans
-&trans         &kp AMPERSAND  &kp PIPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT    &kp COLON  &kp UNDER  &trans  &trans  &trans  &to 0   &trans     &trans    &trans  &trans      &trans  &trans
-&trans         &trans         &kp EQUAL   &kp LESS_THAN         &kp GREATER_THAN                      &kp SPACE  &kp MINUS  &trans  &trans  &trans  &trans             &trans    &trans  &trans      &trans  &trans
+&kp F1         &kp F2         &kp F3      &kp F4                &kp F5                                                                                                &kp F6    &kp F7  &kp F8     &kp F9  &kp F10
+&triple_grave  &trans         &kp HASH    &kp EXCL              &kp SLASH              &kp BACKSLASH                                                        &trans    &trans    &trans  &trans     &trans  &kp F11
+&trans         &trans         &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR                                                           &trans    &trans    &trans  &trans     &trans  &kp F12
+&trans         &kp EXCL       &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL                                                            &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans         &kp AMPERSAND  &kp PIPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT    &kp COLON  &kp UNDER  &trans  &trans  &trans  &to 0   &trans    &trans    &trans  &trans     &trans  &trans
+&trans         &trans         &kp EQUAL   &kp LESS_THAN         &kp GREATER_THAN                      &kp SPACE  &kp MINUS  &trans  &trans  &trans  &trans            &trans    &trans  &trans     &trans  &trans
             >;
         };
 
