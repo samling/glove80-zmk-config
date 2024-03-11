@@ -734,7 +734,7 @@
 &trans         &trans         &kp PLUS    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp STAR                                                             &kp CARET  &trans    &trans  &kp DOLLAR  &trans  &kp F12
 &trans         &kp EXCL       &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL                                                            &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT   &trans  &trans
 &trans         &kp AMPERSAND  &kp PIPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS      &kp COLON  &kp UNDER  &trans  &trans  &trans  &to 0   &trans     &trans    &trans  &trans      &trans  &trans
-&trans         &trans         &kp EQUAL   &kp LESS_THAN         &kp GREATER_THAN                      &kp SPACE  &trans     &trans  &trans  &trans  &trans             &trans    &trans  &trans      &trans  &trans
+&trans         &trans         &kp EQUAL   &kp LESS_THAN         &kp GREATER_THAN                      &kp SPACE  &kp MINUS  &trans  &trans  &trans  &trans             &trans    &trans  &trans      &trans  &trans
             >;
         };
 
