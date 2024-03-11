@@ -736,12 +736,12 @@
 
         layer_Numpad {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4         &kp F5                                                                                                            &kp F6     &kp F7           &kp F8        &kp F9        &kp F10
-&trans  &none   &none   &none          &kp INS        &none                                                                            &kp K_CALCULATOR  &none      &kp KP_MULTIPLY  &kp KP_SLASH  &kp KP_MINUS  &kp F11
-&trans  &none   &none   &none          &none          &none                                                                            &none             &kp KP_N7  &kp KP_N8        &kp KP_N9     &kp KP_PLUS   &kp F12
-&trans  &none   &none   &none          &none          &none                                                                            &none             &kp KP_N4  &kp KP_N5        &kp KP_N6     &kp KP_PLUS   &none
-&trans  &none   &none   &kp LC(LS(C))  &kp LC(LS(V))  &none  &to 0         &trans  &trans  &kp KP_NUM  &trans         &kp KP_DOT       &none             &kp KP_N1  &kp KP_N2        &kp KP_N3     &kp KP_ENTER  &trans
-&trans  &none   &none   &none          &none                 &kp KP_ENTER  &trans  &trans  &trans      &kp BACKSPACE  &kp KP_NUMBER_0                    &kp KP_N0  &kp KP_N0        &kp KP_DOT    &kp KP_ENTER  &trans
+&kp F1  &kp F2  &kp F3  &kp F4         &kp F5                                                                                                         &kp F6     &kp F7           &kp F8        &kp F9        &kp F10
+&trans  &none   &none   &none          &kp INS        &none                                                                            &kp C_AL_CALC  &none      &kp KP_MULTIPLY  &kp KP_SLASH  &kp KP_MINUS  &kp F11
+&trans  &none   &none   &none          &none          &none                                                                            &none          &kp KP_N7  &kp KP_N8        &kp KP_N9     &kp KP_PLUS   &kp F12
+&trans  &none   &none   &none          &none          &none                                                                            &none          &kp KP_N4  &kp KP_N5        &kp KP_N6     &kp KP_PLUS   &none
+&trans  &none   &none   &kp LC(LS(C))  &kp LC(LS(V))  &none  &to 0         &trans  &trans  &kp KP_NUM  &trans         &kp KP_DOT       &none          &kp KP_N1  &kp KP_N2        &kp KP_N3     &kp KP_ENTER  &trans
+&trans  &none   &none   &none          &none                 &kp KP_ENTER  &trans  &trans  &trans      &kp BACKSPACE  &kp KP_NUMBER_0                 &kp KP_N0  &kp KP_N0        &kp KP_DOT    &kp KP_ENTER  &trans
             >;
         };
 
