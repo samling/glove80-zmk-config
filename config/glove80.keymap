@@ -690,7 +690,7 @@
 
         combo_lt_gt_pair {
             bindings = <&lt_gt_pair>;
-            key-positions = <48 51>;
+            key-positions = <47 50>;
             layers = <2>;
         };
 
