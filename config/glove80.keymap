@@ -647,14 +647,14 @@
 
         combo_brackets_pair {
             timeout-ms = <50>;
-            key-positions = <25 26>; // "[]"
+            key-positions = <37 38>; // "[]"
             bindings = <&brackets_pair>;
             layers = <2>;
         };
 
         combo_parens_pair {
             timeout-ms = <50>;
-            key-positions = <37 38>; // "()"
+            key-positions = <25 26>; // "()"
             bindings = <&parens_pair>;
             layers = <2>;
         };
@@ -682,13 +682,13 @@
 
         combo_go_declare {
             bindings = <&go_declare>;
-            key-positions = <39 52>;
+            key-positions = <52 27>;
             layers = <2>;
         };
 
         combo_go_empty_set {
             bindings = <&go_empty_set>;
-            key-positions = <53 24>;
+            key-positions = <39 69>;
         };
 
         combo_lt_gt_pair {
@@ -700,7 +700,7 @@
 
         combo_go_not_equal {
             bindings = <&go_not_equal>;
-            key-positions = <35 52>;
+            key-positions = <52 24>;
             layers = <2>;
         };
 
@@ -742,12 +742,12 @@
 
         layer_Symbols {
             bindings = <
-&kp F1         &kp F2         &kp F3      &kp F4                &kp F5                                                                                               &kp F6    &kp F7  &kp F8     &kp F9  &kp F10
-&triple_grave  &trans         &kp HASH    &kp EXCL              &kp SLASH              &kp PERCENT                                                         &trans    &trans    &trans  &trans     &trans  &kp F11
-&trans         &trans         &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR                                                          &trans    &trans    &trans  &trans     &trans  &kp F12
-&trans         &kp EXCL       &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON                                                           &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans         &kp AMPERSAND  &kp PIPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &kp EQUAL  &trans    &trans  &trans  &trans  &to 0   &trans    &trans    &trans  &trans     &trans  &trans
-&trans         &trans         &kp MINUS   &kp LESS_THAN         &kp GREATER_THAN                      &kp UNDER  &kp STAR  &trans  &trans  &trans  &trans            &trans    &trans  &trans     &trans  &trans
+&kp F1         &kp F2  &kp F3     &kp F4                &kp F5                                                                                                  &kp F6    &kp F7  &kp F8     &kp F9  &kp F10
+&triple_grave  &trans  &kp HASH   &kp EXCL              &kp SLASH              &kp PERCENT                                                            &trans    &trans    &trans  &trans     &trans  &kp F11
+&trans         &trans  &kp EXCL   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON                                                              &trans    &trans    &trans  &trans     &trans  &kp F12
+&trans         &trans  &kp CARET  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR                                                             &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans         &trans  &kp AMPS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE     &kp EQUAL  &kp STAR       &trans  &trans  &trans  &to 0   &trans    &trans    &trans  &trans     &trans  &trans
+&trans         &trans  &kp MINUS  &kp LESS_THAN         &kp GREATER_THAN                    &kp UNDER  &kp BACKSLASH  &trans  &trans  &trans  &trans            &trans    &trans  &trans     &trans  &trans
             >;
         };
 
