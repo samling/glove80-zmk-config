@@ -704,6 +704,18 @@
             bindings = <&tapdance_quote_combos>;
             key-positions = <45 44>;
         };
+
+        combo_parens_pair_2 {
+            bindings = <&parens_pair>;
+            key-positions = <30 31>;
+            layers = <2>;
+        };
+
+        combo_brackets_pair_2 {
+            bindings = <&brackets_pair>;
+            key-positions = <61 60>;
+            layers = <2>;
+        };
     };
 };
 
