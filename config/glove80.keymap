@@ -645,13 +645,13 @@
         };
 
         combo_brackets_pair {
-            key-positions = <67 66>; // "[]"
+            key-positions = <59 62>; // "[]"
             bindings = <&brackets_pair>;
             layers = <2>;
         };
 
         combo_parens_pair {
-            key-positions = <13 12>; // "()"
+            key-positions = <29 32>; // "()"
             bindings = <&parens_pair>;
             layers = <2>;
         };
@@ -696,24 +696,7 @@
 
         combo_go_not_equal {
             bindings = <&go_not_equal>;
-            key-positions = <24 22>;
-            layers = <2>;
-        };
-
-        combo_quote_pair {
-            bindings = <&tapdance_quote_combos>;
-            key-positions = <45 44>;
-        };
-
-        combo_parens_pair_2 {
-            bindings = <&parens_pair>;
-            key-positions = <30 31>;
-            layers = <2>;
-        };
-
-        combo_brackets_pair_2 {
-            bindings = <&brackets_pair>;
-            key-positions = <61 60>;
+            key-positions = <28 36>;
             layers = <2>;
         };
     };
@@ -749,12 +732,12 @@
 
         layer_Symbols {
             bindings = <
-&none      &none           &none                 &none                  &none                                                                                                     &none          &none                 &none                  &none          &none
-&trans     &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI          &kp COMMA                                                                  &trans       &trans         &trans                &trans                 &trans         &trans
-&kp EXCL   &kp LEFT_BRACE  &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp RIGHT_BRACE   &kp QUESTION                                                               &kp COLON    &kp GRAVE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp COMMA
-&kp POUND  &kp CARET       &kp EQUAL             &kp UNDER              &kp DOLLAR        &kp STAR                                                                   &kp LEFT     &kp DOWN       &kp UP                &kp RIGHT              &kp BACKSLASH  &kp GRAVE
-&kp AT     &kp LESS_THAN   &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp SLASH     &kp BACKSLASH  &kp PERIOD  &kp STAR  &trans  &trans  &to 0   &kp PERCENT  &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS       &kp TILDE
-&kp TILDE  &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS                        &kp PERCENT    &kp COLON   &kp SEMI  &trans  &trans  &trans               &trans         &trans                &trans                 &trans         &none
+&none  &none           &none             &none              &none                                                                                                    &none                 &none      &none          &none                  &none
+&none  &none           &none             &none              &none             &none                                                                     &trans       &trans                &trans     &trans         &trans                 &trans
+&none  &kp LEFT_BRACE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp RIGHT_BRACE   &kp GRAVE                                                                 &kp EXCL     &kp LEFT_PARENTHESIS  &kp COLON  &kp SEMICOLON  &kp RIGHT_PARENTHESIS  &none
+&none  &kp CARET       &kp EQUAL         &kp UNDER          &kp DOLLAR        &kp STAR                                                                  &kp LEFT     &kp DOWN              &kp UP     &kp RIGHT      &kp TILDE              &none
+&none  &kp LESS_THAN   &kp PIPE          &kp MINUS          &kp GREATER_THAN  &kp SLASH  &none          &none      &none        &trans  &trans  &to 0   &kp PERCENT  &kp LEFT_BRACKET      &kp PLUS   &kp AMPERSAND  &kp RIGHT_BRACKET      &none
+&none  &none           &none             &none              &none                        &kp BACKSLASH  &kp COLON  &kp PERCENT  &trans  &trans  &trans               &trans                &trans     &trans         &trans                 &none
             >;
         };
 
