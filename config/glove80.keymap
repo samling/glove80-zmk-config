@@ -686,6 +686,7 @@
         combo_go_empty_set {
             bindings = <&go_empty_set>;
             key-positions = <38 37>;
+            layers = <2>;
         };
 
         combo_lt_gt_pair {
