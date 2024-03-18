@@ -639,19 +639,19 @@
         };
 
         combo_braces_pair {
-            key-positions = <23 26>; // "{}"
+            key-positions = <26 25>; // "{}"
             bindings = <&braces_pair>;
             layers = <2>;
         };
 
         combo_brackets_pair {
-            key-positions = <60 61>; // "[]"
+            key-positions = <60 59>; // "[]"
             bindings = <&brackets_pair>;
             layers = <2>;
         };
 
         combo_parens_pair {
-            key-positions = <30 31>; // "()"
+            key-positions = <29 30>; // "()"
             bindings = <&parens_pair>;
             layers = <2>;
         };
@@ -685,13 +685,13 @@
 
         combo_go_empty_set {
             bindings = <&go_empty_set>;
-            key-positions = <38 37>;
+            key-positions = <38 39>;
             layers = <2>;
         };
 
         combo_lt_gt_pair {
             bindings = <&lt_gt_pair>;
-            key-positions = <47 50>;
+            key-positions = <50 49>;
             layers = <2>;
         };
 
@@ -733,12 +733,12 @@
 
         layer_Symbols {
             bindings = <
-&none   &none           &none      &none      &none                                                                                                    &none      &none                 &none                  &none      &none
-&trans  &trans          &trans     &trans     &trans            &trans                                                                    &trans       &trans     &trans                &trans                 &trans     &trans
-&trans  &kp LEFT_BRACE  &kp AT     &kp HASH   &kp RIGHT_BRACE   &kp GRAVE                                                                 &kp EXCL     &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &none
-&trans  &kp CARET       &kp EQUAL  &kp UNDER  &kp DOLLAR        &kp STAR                                                                  &kp LEFT     &kp DOWN   &kp UP                &kp RIGHT              &kp TILDE  &none
-&trans  &kp LESS_THAN   &kp PIPE   &kp MINUS  &kp GREATER_THAN  &kp SLASH  &none          &none      &none        &trans  &trans  &to 0   &kp PERCENT  &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPS   &none
-&none   &none           &none      &none      &none                        &kp BACKSLASH  &kp COLON  &kp PERCENT  &trans  &trans  &trans               &trans     &trans                &trans                 &trans     &none
+&none   &none      &none      &none           &none                                                                                                    &none                 &none                  &none      &none      &none
+&trans  &trans     &trans     &trans          &trans            &trans                                                                    &trans       &trans                &trans                 &trans     &trans     &trans
+&trans  &kp GRAVE  &kp HASH   &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp STAR                                                                  &kp EXCL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON  &kp SEMI   &none
+&trans  &kp AT     &kp EQUAL  &kp CARET       &kp DOLLAR        &kp UNDER                                                                 &kp LEFT     &kp DOWN              &kp UP                 &kp RIGHT  &kp TILDE  &none
+&trans  &kp PIPE   &kp MINUS  &kp LESS_THAN   &kp GREATER_THAN  &kp SLASH  &none          &none      &none        &trans  &trans  &to 0   &kp PERCENT  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &kp AMPS   &none
+&none   &none      &none      &none           &none                        &kp BACKSLASH  &kp COLON  &kp PERCENT  &trans  &trans  &trans               &trans                &trans                 &trans     &trans     &none
             >;
         };
 
