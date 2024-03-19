@@ -734,13 +734,13 @@
             >;
         };
 
-        layer_Base_Colemak {
+        layer_Base_Colemak_DH {
             bindings = <
 &kp LS(LA(LC(DOT)))        &kp C_PLAY_PAUSE  &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP                                                                                                                                                             &kp PRINTSCREEN  &trans          &kp CAPSLOCK  &kp DEL             &kp EQUAL
 &kp GRAVE                  &kp N1            &kp N2        &kp N3        &kp N4        &kp N5                                                                                                                                             &kp N6  &kp N7           &kp N8          &kp N9        &kp N0              &kp BACKSLASH
-&auto_tab LA(LC(TAB)) TAB  &kp Q             &kp W         &kp F         &kp P         &kp G                                                                                                                                              &kp J   &kp L            &kp U           &kp Y         &kp SEMI            &kp MINUS
-&mt LCTRL ESCAPE           &kp A             &kp R         &kp S         &kp T         &kp D                                                                                                                                              &kp H   &kp N            &kp E           &kp I         &kp O               &kp SINGLE_QUOTE
-&kp LSHIFT                 &kp Z             &kp X         &kp C         &kp V         &kp B   &mo_tog_tapdance_numpad  &layer_mo_sl 4 4                    &kp LC(W)            &kp LC(LS(T))        &none     &sl_tap_hold_symbols 3 0  &kp K   &kp M            &kp COMMA       &kp DOT       &kp FSLH            &kp RSHIFT
+&auto_tab LA(LC(TAB)) TAB  &kp Q             &kp W         &kp F         &kp P         &kp B                                                                                                                                              &kp J   &kp L            &kp U           &kp Y         &kp SEMI            &kp MINUS
+&mt LCTRL ESCAPE           &kp A             &kp R         &kp S         &kp T         &kp G                                                                                                                                              &kp M   &kp N            &kp E           &kp I         &kp O               &kp SINGLE_QUOTE
+&kp LSHIFT                 &kp Z             &kp X         &kp C         &kp D         &kp V   &mo_tog_tapdance_numpad  &layer_mo_sl 4 4                    &kp LC(W)            &kp LC(LS(T))        &none     &sl_tap_hold_symbols 3 0  &kp K   &kp H            &kp COMMA       &kp DOT       &kp FSLH            &kp RSHIFT
 &magic 7 0                 &kp LEFT_GUI      &kp LEFT_ALT  &kp UNDER     &kp MINUS             &kp RET                  &stickyshift_tap_hold LEFT_SHIFT 0  &tmux_leader_scroll  &tmux_leader_scroll  &kp BSPC  &kp SPACE                         &kp MINUS        &kp UNDERSCORE  &none         &triple_tap_qwerty  &double_tap_to_game
             >;
         };
