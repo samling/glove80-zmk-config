@@ -645,31 +645,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_updir {
-            timeout-ms = <50>;
-            key-positions = <61 62>; // "./"
-            bindings = <&up_directory>;
-            require-prior-idle-ms = <50>;
-        };
-
-        combo_braces_pair {
-            key-positions = <25 24>; // "{}"
-            bindings = <&braces_pair>;
-            layers = <3>;
-        };
-
-        combo_brackets_pair {
-            key-positions = <60 61>; // "[]"
-            bindings = <&brackets_pair>;
-            layers = <3>;
-        };
-
-        combo_parens_pair {
-            key-positions = <30 31>; // "()"
-            bindings = <&parens_pair>;
-            layers = <3>;
-        };
-
         combo_helm_comment_multi_line {
             timeout-ms = <50>;
             key-positions = <40 43 49>; // "HEL"
@@ -700,12 +675,6 @@
         combo_go_empty_set {
             bindings = <&go_empty_set>;
             key-positions = <38 39>;
-            layers = <3>;
-        };
-
-        combo_lt_gt_pair {
-            bindings = <&lt_gt_pair>;
-            key-positions = <49 48>;
             layers = <3>;
         };
 
@@ -747,23 +716,23 @@
 
         layer_Numpad {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4         &kp F5                                                                                                            &kp F6     &kp F7           &kp F8        &kp F9        &kp F10
-&trans  &none   &none   &none          &kp INS        &none                                                                            &kp C_AL_CALC     &none      &kp KP_MULTIPLY  &kp KP_SLASH  &kp KP_MINUS  &kp F11
-&trans  &none   &none   &none          &none          &none                                                                            &none             &kp KP_N7  &kp KP_N8        &kp KP_N9     &kp KP_PLUS   &kp F12
-&trans  &none   &none   &none          &none          &none                                                                            &none             &kp KP_N4  &kp KP_N5        &kp KP_N6     &kp KP_PLUS   &none
-&trans  &none   &none   &kp LC(LS(C))  &kp LC(LS(V))  &none  &to 0         &trans  &trans  &kp KP_NUM  &trans         &kp KP_DOT       &none             &kp KP_N1  &kp KP_N2        &kp KP_N3     &kp KP_ENTER  &trans
-&trans  &none   &none   &none          &none                 &kp KP_ENTER  &trans  &trans  &trans      &kp BACKSPACE  &kp KP_NUMBER_0                    &kp KP_N0  &kp KP_N0        &kp KP_DOT    &kp KP_ENTER  &trans
+&kp F1  &kp F2  &kp F3  &kp F4         &kp F5                                                                                                         &kp F6     &kp F7           &kp F8        &kp F9        &kp F10
+&trans  &none   &none   &none          &kp INS        &none                                                                            &kp C_AL_CALC  &none      &kp KP_MULTIPLY  &kp KP_SLASH  &kp KP_MINUS  &kp F11
+&trans  &none   &none   &none          &none          &none                                                                            &none          &kp KP_N7  &kp KP_N8        &kp KP_N9     &kp KP_PLUS   &kp F12
+&trans  &none   &none   &none          &none          &none                                                                            &none          &kp KP_N4  &kp KP_N5        &kp KP_N6     &kp KP_PLUS   &none
+&trans  &none   &none   &kp LC(LS(C))  &kp LC(LS(V))  &none  &to 0         &trans  &trans  &kp KP_NUM  &trans         &kp KP_DOT       &none          &kp KP_N1  &kp KP_N2        &kp KP_N3     &kp KP_ENTER  &trans
+&trans  &none   &none   &none          &none                 &kp KP_ENTER  &trans  &trans  &trans      &kp BACKSPACE  &kp KP_NUMBER_0                 &kp KP_N0  &kp KP_N0        &kp KP_DOT    &kp KP_ENTER  &trans
             >;
         };
 
         layer_Symbols {
             bindings = <
-&none   &none      &none           &none             &none                                                                                              &none      &none                 &none                  &none      &none
-&trans  &trans     &trans          &trans            &trans      &trans                                                                    &trans       &trans     &trans                &trans                 &trans     &trans
-&trans  &kp GRAVE  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp HASH    &kp STAR                                                                  &kp EXCL     &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &none
-&trans  &kp CARET  &kp EQUAL       &kp AT            &kp DOLLAR  &kp UNDER                                                                 &kp LEFT     &kp DOWN   &kp UP                &kp RIGHT              &kp TILDE  &none
-&trans  &kp PIPE   &kp LESS_THAN   &kp GREATER_THAN  &kp MINUS   &kp SLASH  &none          &none      &none        &trans  &trans  &to 0   &kp PERCENT  &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPS   &none
-&none   &none      &none           &none             &none                  &kp BACKSLASH  &kp COLON  &kp PERCENT  &trans  &trans  &trans               &trans     &trans                &trans                 &trans     &none
+&none   &none      &none           &none             &none                                                                                                  &none      &none                 &none                  &none      &none
+&trans  &trans     &trans          &trans            &trans      &trans                                                                        &trans       &trans     &trans                &trans                 &trans     &trans
+&trans  &kp GRAVE  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp HASH    &kp STAR                                                                      &kp EXCL     &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &none
+&trans  &kp CARET  &kp EQUAL       &kp AT            &kp DOLLAR  &kp UNDER                                                                     &kp LEFT     &kp DOWN   &kp UP                &kp RIGHT              &kp TILDE  &none
+&trans  &kp MINUS  &kp LESS_THAN   &kp GREATER_THAN  &kp PIPE    &kp AMPERSAND  &none          &none      &none        &trans  &trans  &to 0   &kp PERCENT  &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SLASH  &none
+&none   &none      &none           &none             &none                      &kp BACKSLASH  &kp COLON  &kp PERCENT  &trans  &trans  &trans               &trans     &trans                &trans                 &trans     &none
             >;
         };
 
