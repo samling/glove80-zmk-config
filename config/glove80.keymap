@@ -568,11 +568,11 @@
             flavor = "hold-preferred";
         };
 
-        double_tap_to_game: double_tap_to_game {
+        dt_game: dt_game {
             compatible = "zmk,behavior-tap-dance";
-            label = "DOUBLE_TAP_TO_GAME";
+            label = "DT_GAME";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 5>;
+            bindings = <&none>, <&to 6>;
         };
 
         tapdance_quote_combos: tapdance_quote_combos {
@@ -627,18 +627,25 @@
             hold-trigger-on-release;
         };
 
-        triple_tap_colemak: triple_tap_colemak {
+        tt_colemak: tt_colemak {
             compatible = "zmk,behavior-tap-dance";
-            label = "TRIPLE_TAP_COLEMAK";
+            label = "TT_COLEMAK";
             #binding-cells = <0>;
             bindings = <&none>, <&none>, <&to 1>;
         };
 
-        triple_tap_qwerty: triple_tap_qwerty {
+        tt_qwerty: tt_qwerty {
             compatible = "zmk,behavior-tap-dance";
-            label = "TRIPLE_TAP_QWERTY";
+            label = "TT_QWERTY";
             #binding-cells = <0>;
             bindings = <&none>, <&none>, <&to 0>;
+        };
+
+        dt_alt_f4: dt_alt_f4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_ALT_F4";
+            #binding-cells = <0>;
+            bindings = <&none>, <&kp LA(F4)>;
         };
     };
 
@@ -723,23 +730,23 @@
 
         layer_Base {
             bindings = <
-&kp LS(LA(LC(DOT)))        &kp C_PLAY_PAUSE  &kp C_MUTE    &kp C_VOL_DN      &kp C_VOL_UP                                                                                                                                                                  &kp PRINTSCREEN  &trans     &kp CAPSLOCK  &kp DEL              &kp EQUAL
-&kp GRAVE                  &kp N1            &kp N2        &kp N3            &kp N4             &kp N5                                                                                                                                             &kp N6  &kp N7           &kp N8     &kp N9        &kp N0               &kp BACKSLASH
-&auto_tab LA(LC(TAB)) TAB  &kp Q             &kp W         &kp E             &kp R              &kp T                                                                                                                                              &kp Y   &kp U            &kp I      &kp O         &kp P                &kp MINUS
-&mt LCTRL ESCAPE           &kp A             &kp S         &kp D             &kp F              &kp G                                                                                                                                              &kp H   &kp J            &kp K      &kp L         &kp SEMICOLON        &kp SINGLE_QUOTE
-&kp LSHIFT                 &kp Z             &kp X         &kp C             &kp V              &kp B   &mo_tog_tapdance_numpad  &layer_mo_sl 4 4                    &kp LC(W)            &kp LC(LS(T))        &none     &sl_tap_hold_symbols 3 0  &kp N   &kp M            &kp COMMA  &kp DOT       &kp FSLH             &kp RSHIFT
-&magic 7 0                 &kp LEFT_GUI      &kp LEFT_ALT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &kp RET                  &stickyshift_tap_hold LEFT_SHIFT 0  &tmux_leader_scroll  &tmux_leader_scroll  &kp BSPC  &kp SPACE                         &none            &none      &none         &triple_tap_colemak  &double_tap_to_game
+&kp LS(LA(LC(DOT)))        &kp C_PLAY_PAUSE  &kp C_MUTE    &kp C_VOL_DN      &kp C_VOL_UP                                                                                                                                                                          &kp LC(LS(M))  &kp PRINTSCREEN  &kp CAPSLOCK  &kp DEL        &kp EQUAL
+&kp GRAVE                  &kp N1            &kp N2        &kp N3            &kp N4             &kp N5                                                                                                                                                     &kp N6  &kp N7         &kp N8           &kp N9        &kp N0         &kp BACKSLASH
+&auto_tab LA(LC(TAB)) TAB  &kp Q             &kp W         &kp E             &kp R              &kp T                                                                                                                                                      &kp Y   &kp U          &kp I            &kp O         &kp P          &kp MINUS
+&mt LCTRL ESCAPE           &kp A             &kp S         &kp D             &kp F              &kp G                                                                                                                                                      &kp H   &kp J          &kp K            &kp L         &kp SEMICOLON  &kp SINGLE_QUOTE
+&kp LSHIFT                 &kp Z             &kp X         &kp C             &kp V              &kp B   &mo_tog_tapdance_numpad  &layer_mo_sl 5 5                    &kp LC(W)            &kp LC(LS(T))        &layer_mo_sl 4 4  &sl_tap_hold_symbols 3 0  &kp N   &kp M          &kp COMMA        &kp DOT       &kp FSLH       &kp RSHIFT
+&magic 8 0                 &kp LEFT_GUI      &kp LEFT_ALT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &kp RET                  &stickyshift_tap_hold LEFT_SHIFT 0  &tmux_leader_scroll  &tmux_leader_scroll  &kp BSPC          &kp SPACE                         &none          &none            &none         &tt_colemak    &dt_game
             >;
         };
 
         layer_Base_Colemak_DH {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans              &trans
-&trans  &kp Q   &kp W   &kp F   &kp P   &kp B                                                   &kp J   &kp L   &kp U   &kp Y   &kp SEMI            &trans
-&trans  &kp A   &kp R   &kp S   &kp T   &kp G                                                   &kp M   &kp N   &kp E   &kp I   &kp O               &trans
-&trans  &kp Z   &kp X   &kp C   &kp D   &kp V   &trans  &trans  &trans  &trans  &trans  &trans  &kp K   &kp H   &trans  &trans  &trans              &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &triple_tap_qwerty  &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans      &trans
+&trans  &kp Q   &kp W   &kp F   &kp P   &kp B                                                   &kp J   &kp L   &kp U   &kp Y   &kp SEMI    &trans
+&trans  &kp A   &kp R   &kp S   &kp T   &kp G                                                   &kp M   &kp N   &kp E   &kp I   &kp O       &trans
+&trans  &kp Z   &kp X   &kp C   &kp D   &kp V   &trans  &trans  &trans  &trans  &trans  &trans  &kp K   &kp H   &trans  &trans  &trans      &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &tt_qwerty  &trans
             >;
         };
 
@@ -767,12 +774,23 @@
 
         layer_Windows {
             bindings = <
-&trans              &kp LA(LC(LG(NUMBER_1)))  &kp LA(LC(LG(NUMBER_2)))  &kp LA(LC(LG(NUMBER_3)))  &kp LA(LC(LG(NUMBER_4)))                                                                                          &trans              &trans              &trans              &trans                     &trans
-&trans              &kp LS(LA(LC(N1)))        &kp LS(LA(LC(N2)))        &kp LS(LA(LC(N3)))        &kp LS(LA(LC(N4)))        &kp LS(LA(LC(N5)))                                                  &kp LS(LA(LC(N6)))  &kp LS(LA(LC(N7)))  &kp LS(LA(LC(N8)))  &kp LS(LA(LC(N9)))  &kp LS(LA(LC(N0)))         &trans
-&trans              &trans                    &trans                    &trans                    &kp LS(LA(LC(R)))         &trans                                                              &kp LC(LS(TAB))     &kp LA(LEFT)        &kp LA(RIGHT)       &kp LC(TAB)         &kp LS(LA(LC(P)))          &kp LS(LA(LC(MINUS)))
-&kp LC(LS(ESCAPE))  &trans                    &trans                    &trans                    &kp LS(LA(LC(F)))         &trans                                                              &kp LS(LA(LC(H)))   &kp LS(LA(LC(J)))   &kp LS(LA(LC(K)))   &kp LS(LA(LC(L)))   &kp LS(LA(LC(SEMICOLON)))  &kp LS(LA(LC(SQT)))
-&trans              &trans                    &trans                    &kp LA(LC(LG(C)))         &trans                    &trans              &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LA(LC(M)))   &kp LS(LA(LC(N)))   &trans              &trans              &trans                     &trans
-&trans              &trans                    &trans                    &trans                    &trans                                        &trans  &trans  &trans  &trans  &trans  &trans                      &trans              &trans              &trans              &trans                     &trans
+&trans              &trans  &trans                    &trans                    &trans                                                                                                                        &trans                    &trans                    &trans                    &trans                     &trans
+&trans              &trans  &trans                    &trans                    &trans                    &trans                                                                    &trans                    &trans                    &trans                    &trans                    &trans                     &trans
+&trans              &trans  &kp LS(LA(LC(F)))         &trans                    &kp LS(LA(LC(R)))         &kp LS(LA(LC(NUMBER_4)))                                                  &kp LA(LC(LG(NUMBER_1)))  &kp LA(LC(LG(NUMBER_2)))  &kp LA(LC(LG(NUMBER_3)))  &kp LA(LC(LG(NUMBER_4)))  &kp LS(LA(LC(P)))          &kp LS(LA(LC(MINUS)))
+&kp LC(LS(ESCAPE))  &trans  &kp LS(LA(LC(NUMBER_1)))  &kp LS(LA(LC(NUMBER_2)))  &kp LS(LA(LC(NUMBER_3)))  &kp LS(LA(LC(N5)))                                                        &kp LS(LA(LC(H)))         &kp LS(LA(LC(J)))         &kp LS(LA(LC(K)))         &kp LS(LA(LC(L)))         &kp LS(LA(LC(SEMICOLON)))  &kp LS(LA(LC(SQT)))
+&trans              &trans  &kp LS(LA(LC(N7)))        &kp LA(LC(LG(C)))         &kp LS(LA(LC(N8)))        &kp LS(LA(LC(NUMBER_6)))  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LA(LC(M)))         &kp LS(LA(LC(N)))         &trans                    &trans                    &trans                     &trans
+&trans              &trans  &trans                    &trans                    &trans                                              &trans  &trans  &trans  &trans  &trans  &trans                            &trans                    &trans                    &trans                    &trans                     &trans
+            >;
+        };
+
+        layer_Tabs {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                               &trans        &trans         &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &dt_alt_f4  &trans                                                  &trans           &trans        &trans         &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans      &trans                                                  &trans           &trans        &trans         &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans      &trans                                                  &kp LS(LC(TAB))  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LC(TAB)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans        &trans         &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans                   &trans        &trans         &trans       &trans  &trans
             >;
         };
 
@@ -782,7 +800,7 @@
 &kp ESC  &kp N1     &kp N2  &kp N3  &kp N4  &kp N5                                                      &trans  &trans  &trans  &trans  &trans  &trans
 &none    &kp TAB    &kp Q   &kp W   &kp E   &kp R                                                       &trans  &trans  &trans  &trans  &trans  &trans
 &none    &kp LCTRL  &kp A   &kp S   &kp D   &kp F                                                       &trans  &trans  &trans  &trans  &trans  &trans
-&none    &kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &mo 6      &kp I     &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&none    &kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &mo 7      &kp I     &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans   &trans     &kp B   &kp N   &kp M           &kp SPACE  &kp LALT  &none  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &to 0
             >;
         };
