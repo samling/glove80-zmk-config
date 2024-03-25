@@ -683,6 +683,35 @@
             key-positions = <28 36>;
             layers = <3>;
         };
+
+        combo_braces_pair {
+            bindings = <&braces_pair>;
+            key-positions = <24 25>;
+            layers = <3>;
+        };
+
+        combo_lt_gt_pair {
+            bindings = <&lt_gt_pair>;
+            key-positions = <48 49>;
+            layers = <3>;
+        };
+
+        combo_brackets_pair {
+            bindings = <&brackets_pair>;
+            key-positions = <60 61>;
+            layers = <3>;
+        };
+
+        combo_parens_pair {
+            bindings = <&parens_pair>;
+            key-positions = <30 31>;
+            layers = <3>;
+        };
+
+        combo_up_dir {
+            bindings = <&up_directory>;
+            key-positions = <62 61>;
+        };
     };
 };
 
