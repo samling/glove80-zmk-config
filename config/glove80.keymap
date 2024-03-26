@@ -568,11 +568,11 @@
             flavor = "hold-preferred";
         };
 
-        dt_game: dt_game {
+        dt_tt_game_colemak: dt_tt_game_colemak {
             compatible = "zmk,behavior-tap-dance";
-            label = "DT_GAME";
+            label = "DT_TT_GAME_COLEMAK";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 6>;
+            bindings = <&none>, <&to 6>, <&to 1>;
         };
 
         tapdance_quote_combos: tapdance_quote_combos {
@@ -735,7 +735,7 @@
 &auto_tab LA(LC(TAB)) TAB  &kp Q             &kp W         &kp E             &kp R              &kp T                                                                                                                                                      &kp Y   &kp U          &kp I            &kp O         &kp P          &kp MINUS
 &mt LCTRL ESCAPE           &kp A             &kp S         &kp D             &kp F              &kp G                                                                                                                                                      &kp H   &kp J          &kp K            &kp L         &kp SEMICOLON  &kp SINGLE_QUOTE
 &kp LSHIFT                 &kp Z             &kp X         &kp C             &kp V              &kp B   &mo_tog_tapdance_numpad  &layer_mo_sl 5 5                    &kp LC(W)            &kp LC(LS(T))        &layer_mo_sl 4 4  &sl_tap_hold_symbols 3 0  &kp N   &kp M          &kp COMMA        &kp DOT       &kp FSLH       &kp RSHIFT
-&magic 8 0                 &kp LEFT_GUI      &kp LEFT_ALT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &kp RET                  &stickyshift_tap_hold LEFT_SHIFT 0  &tmux_leader_scroll  &tmux_leader_scroll  &kp BSPC          &kp SPACE                         &none          &none            &none         &tt_colemak    &dt_game
+&magic 8 0                 &kp LEFT_GUI      &kp LEFT_ALT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &kp RET                  &stickyshift_tap_hold LEFT_SHIFT 0  &tmux_leader_scroll  &tmux_leader_scroll  &kp BSPC          &kp SPACE                         &kp MINUS      &kp UNDER        &none         &none          &dt_tt_game_colemak
             >;
         };
 
