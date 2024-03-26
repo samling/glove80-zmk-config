@@ -765,9 +765,9 @@
             bindings = <
 &none   &none      &none           &none             &none                                                                                                  &none      &none                 &none                  &none      &none
 &trans  &trans     &trans          &trans            &trans      &trans                                                                        &trans       &trans     &trans                &trans                 &trans     &trans
-&trans  &kp GRAVE  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp HASH    &kp STAR                                                                      &kp EXCL     &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &none
-&trans  &kp CARET  &kp EQUAL       &kp AT            &kp DOLLAR  &kp UNDER                                                                     &kp LEFT     &kp DOWN   &kp UP                &kp RIGHT              &kp TILDE  &none
-&trans  &kp MINUS  &kp LESS_THAN   &kp GREATER_THAN  &kp PIPE    &kp AMPERSAND  &none          &none      &none        &trans  &trans  &to 0   &kp PERCENT  &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SLASH  &none
+&trans  &kp GRAVE  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp AT      &kp STAR                                                                      &kp EXCL     &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &none
+&trans  &kp CARET  &kp EQUAL       &kp HASH          &kp DOLLAR  &kp UNDER                                                                     &kp LEFT     &kp DOWN   &kp UP                &kp RIGHT              &kp TILDE  &none
+&trans  &kp MINUS  &kp LESS_THAN   &kp GREATER_THAN  &kp PIPE    &kp AMPERSAND  &kp SLASH      &none      &none        &trans  &trans  &to 0   &kp PERCENT  &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SLASH  &none
 &none   &none      &none           &none             &none                      &kp BACKSLASH  &kp COLON  &kp PERCENT  &trans  &trans  &trans               &trans     &trans                &trans                 &trans     &none
             >;
         };
